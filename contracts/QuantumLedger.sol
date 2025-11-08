@@ -1,19 +1,6 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-/**
- * @title QuantumLedger
- * @dev Immutable quantum-resistant ledger storing hashed entries with timestamps and metadata.
- */
-contract QuantumLedger {
-    struct LedgerEntry {
-        bytes32 dataHash;       // Quantum-resistant hash (e.g., SHA-3/Keccak or post-quantum hash)
-        address submitter;      // Address who submitted the entry
-        uint256 timestamp;      // Block timestamp when entry was submitted
-        string metadataURI;     // Optional metadata URI pointing to off-chain details (IPFS, Arweave)
-    }
-
-    // Mapping of entry indices to ledger entries
+Quantum-resistant hash (e.g., SHA-3/Keccak or post-quantum hash)
+        address submitter;      Block timestamp when entry was submitted
+        string metadataURI;     Mapping of entry indices to ledger entries
     mapping(uint256 => LedgerEntry) private ledgerEntries;
     uint256 private entryCount;
 
@@ -76,3 +63,6 @@ contract QuantumLedger {
         return entryCount;
     }
 }
+// 
+End
+// 
