@@ -5,6 +5,7 @@ Quantum-resistant hash (e.g., SHA-3/Keccak or post-quantum hash)
     uint256 private entryCount;
 
     End
+End
 // 
 // 
 End
